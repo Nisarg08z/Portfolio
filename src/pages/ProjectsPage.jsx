@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 
 const ProjectsPage = () => {
   return (
-    <div className="min-h-screen px-6 py-10 flex justify-center">
+    <div id="project" className="min-h-screen pt-20 px-4 flex justify-center">
       <div className="max-w-7xl w-full flex flex-col items-center">
         <h2 className="text-4xl sm:text-5xl font-bold px-8 py-3 rounded-lg mb-12">
           Projects

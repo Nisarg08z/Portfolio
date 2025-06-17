@@ -4,7 +4,7 @@ import SkillCard from "../components/SkillCard";
 
 const SkillsPage = () => {
   return (
-    <div className="min-h-screen flex justify-center items-start pt-20 px-4">
+    <div id="skills" className="min-h-screen flex justify-center items-start pt-20 px-4">
       <div className="max-w-7xl w-full flex flex-col items-center">
         <h2 className="text-4xl sm:text-5xl font-bold px-8 py-3 rounded-lg mb-12">
           Skills
