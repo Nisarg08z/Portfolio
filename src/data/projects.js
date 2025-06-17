@@ -1,0 +1,28 @@
+export const projects = [
+  {
+    id: 1,
+    title: "Portfolio Website",
+    thumbnail: "/images/portfolio.png",
+    git: "https://github.com/username/portfolio",
+    demo: "https://username.github.io/portfolio",
+    youtube: "https://youtube.com/demo-video",
+    smalldescription: "A personal portfolio website to showcase my skills and projects.",
+    description: "",
+    tools: ["React", "Tailwind CSS", "Framer Motion"],
+    images: ["https://via.placeholder.com/400", "https://via.placeholder.com/450"],
+    videos: ["https://youtube.com/embed/demo1"],
+  },
+  {
+    id: 2,
+    title: "Chat App",
+    thumbnail: "/images/chatapp.png",
+    git: "https://github.com/username/chat-app",
+    demo: "https://chatapp-demo.com",
+    youtube: "https://youtube.com/demo-chat",
+    smalldescription: "Real-time chat app using Socket.IO and Node.js.",
+    description: "",
+    tools: ["React", "Node.js", "Socket.IO"],
+    images: ["https://via.placeholder.com/400"],
+    videos: ["https://youtube.com/embed/chatdemo"],
+  },
+];

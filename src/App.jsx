@@ -1,16 +1,15 @@
-import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
-import Home from './pages/Home';
-import PartitionAnimation from './components/PartitionAnimation'
-import SkillsPage from './pages/SkillsPage';
+import Landing from './Landing';
+import ProjectDetail from './pages/ProjectDetail';
 
 export default function App() {
   return (
     <Layout>
-      < Home />
-      < PartitionAnimation />
-      < SkillsPage />
-
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/project/:id" element={<ProjectDetail />} />
+      </Routes>
     </Layout>
   );
 }
