@@ -1,42 +1,45 @@
+import { FaJs, FaReact, FaNodeJs, FaGit, FaDocker } from "react-icons/fa";
+import { SiTailwindcss, SiMongodb, SiTypescript, SiFigma, SiPython } from "react-icons/si";
+
 export const skills = [
   {
     name: "JavaScript",
-    image: "/skills/js.png",
+    icon: FaJs,
   },
   {
     name: "React",
-    image: "/skills/react.png",
+    icon: FaReact,
   },
   {
     name: "Node.js",
-    image: "/skills/node.png",
+    icon: FaNodeJs,
   },
   {
     name: "Tailwind",
-    image: "/skills/tailwind.png",
+    icon: SiTailwindcss,
   },
   {
     name: "MongoDB",
-    image: "/skills/mongo.png",
+    icon: SiMongodb,
   },
   {
     name: "Python",
-    image: "/skills/python.png",
+    icon: SiPython,
   },
   {
     name: "Docker",
-    image: "/skills/docker.png",
+    icon: FaDocker,
   },
   {
     name: "Git",
-    image: "/skills/git.png",
+    icon: FaGit,
   },
   {
     name: "TypeScript",
-    image: "/skills/typescript.png",
+    icon: SiTypescript,
   },
   {
     name: "Figma",
-    image: "/skills/figma.png",
+    icon: SiFigma,
   },
 ];

@@ -1,5 +1,6 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { AiOutlineX } from "react-icons/ai";
 
 const ContactInfo = () => (
   <div>
@@ -12,9 +13,10 @@ const ContactInfo = () => (
       nisarg693z@gmail.com
     </h2>
     <div className="flex gap-4 text-2xl">
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition"><FaGithub /></a>
-      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition"><FaLinkedin /></a>
-      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition"><FaTwitter /></a>
+      <a href="https://github.com/nisarg08z" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition"><FaGithub /></a>
+      <a href="https://www.linkedin.com/in/nisarg-fultariya-5ba908277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition"><FaLinkedin /></a>
+      <a href="https://x.com/Nisarg918865791" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition"><AiOutlineX /></a>
+      <a href="https://youtube.com/@const_nisarg?si=s2YHSpasGz3wVTrO" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition"><FaYoutube  /></a>
     </div>
   </div>
 );

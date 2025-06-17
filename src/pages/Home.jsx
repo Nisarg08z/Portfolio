@@ -1,10 +1,11 @@
 import React from 'react';
 import HomeAnimation from '../components/HomeAnimation';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube  } from 'react-icons/fa';
+import { AiOutlineX } from "react-icons/ai";
 
 const Home = () => {
   return (
-    <section
+    <div
       id="home"
       className="flex flex-col-reverse md:flex-row items-center justify-center px-6 lg:px-20 min-h-[calc(100vh-80px)]"
     >
@@ -20,7 +21,7 @@ const Home = () => {
           {/* Social Icons */}
           <div className="flex gap-3 justify-center md:justify-start">
             <a
-              href="https://github.com/"
+              href="https://github.com/nisarg08z"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-110 transition text-2xl"
@@ -28,7 +29,7 @@ const Home = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/nisarg-fultariya-5ba908277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-110 transition text-2xl"
@@ -36,12 +37,20 @@ const Home = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://twitter.com/"
+              href="https://x.com/Nisarg918865791"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-110 transition text-2xl"
             >
-              <FaTwitter />
+              <AiOutlineX />
+            </a>
+            <a
+              href="https://youtube.com/@const_nisarg?si=s2YHSpasGz3wVTrO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 transition text-2xl"
+            >
+              <FaYoutube  />
             </a>
           </div>
         </div>
@@ -51,7 +60,7 @@ const Home = () => {
       <div className="w-full md:w-1/2 flex items-center justify-center mb-10 md:mb-0">
         <HomeAnimation />
       </div>
-    </section>
+    </div>
   );
 };
 

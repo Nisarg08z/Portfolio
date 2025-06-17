@@ -12,7 +12,7 @@ const SkillsPage = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 px-4 w-full">
           {skills.map((skill, index) => (
-            <SkillCard key={index} name={skill.name} image={skill.image} />
+            <SkillCard key={index} name={skill.name} icon={skill.icon} />
           ))}
         </div>
       </div>

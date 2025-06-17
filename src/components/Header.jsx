@@ -17,7 +17,11 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-br from-[#0f0f0f] via-[#1a1a1a] to-[#111] shadow-md px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <h1 className="text-white text-xl font-semibold">Nisarg</h1>
+        <img
+          src="/images/portfolio.png"
+          alt="Logo"
+          className="h-8 w-8 object-contain"
+        />
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-4">
