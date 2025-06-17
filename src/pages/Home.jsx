@@ -13,14 +13,15 @@ const Home = () => {
       <div className="w-full md:w-1/2 flex items-center justify-center mt-10 md:mt-0">
         <div className="space-y-6 text-center md:text-left">
           <h1 className="text-5xl md:text-6xl font-bold">Nisarg Fultariya</h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-lg mx-auto md:mx-0">
-            Hi! I’m a creative and technically driven developer with a strong foundation in full-stack web development and a deep curiosity for AI and intelligent systems. I specialize in building dynamic, scalable applications using the MERN stack and enjoy leveraging OpenAI and other LLM-based tools to create smart, automated solutions.
+          <div className="text-lg md:text-xl text-gray-300 max-w-lg mx-auto md:mx-0">
+            <p>
+              Passionate full-stack developer with a strong grip on the MERN stack and AI technologies like OpenAI, LangChain, and vector databases.
+            </p>
+            <p>
+              I build intelligent, scalable, and user focused web applications blending clean logic, smart automation, and sleek UI design to solve real world problems efficiently.
+            </p>
 
-            Beyond frameworks and APIs, I love solving problems with clean logic and efficient code. Whether it’s building real-time applications, integrating AI workflows, or automating complex tasks, I approach each challenge with a blend of curiosity, structure, and creativity.
-
-            I’m always exploring new technologies, pushing limits, and building things that not only work—but think.
-          </p>
-
+          </div>
           {/* Social Icons */}
           <div className="flex gap-3 justify-center md:justify-start">
             <a
