@@ -11,6 +11,7 @@ export const projects = [
     tools: ["React", "Tailwind CSS", "Framer Motion"],
     images: ["https://via.placeholder.com/400", "https://via.placeholder.com/450"],
     videos: ["https://youtube.com/embed/demo1"],
+    status: "completed",
   },
   {
     id: 2,
@@ -24,5 +25,20 @@ export const projects = [
     tools: ["React", "Node.js", "Socket.IO"],
     images: ["https://via.placeholder.com/400"],
     videos: ["https://youtube.com/embed/chatdemo"],
+    status: "in progress", 
+  },
+  {
+    id: 3,
+    title: "E-commerce Platform",
+    thumbnail: "/images/ecommerce.png",
+    git: "",
+    demo: "",
+    youtube: "",
+    smalldescription: "An e-commerce platform with admin dashboard and payment integration.",
+    description: "",
+    tools: ["Next.js", "MongoDB", "Stripe"],
+    images: [],
+    videos: [],
+    status: "not started",
   },
 ];
