@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const navItems = ["home", "skills", "project", "contact"];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false); // close menu on mobile after click
-    }
+  const goToSection = (id) => {
+    navigate(`/#${id}`);
+    setIsOpen(false);
   };
 
   return (
@@ -20,7 +20,8 @@ const Header = () => {
         <img
           src="/images/portfolio.png"
           alt="Logo"
-          className="h-8 w-8 object-contain"
+          className="h-8 w-8 object-contain cursor-pointer"
+          onClick={() => navigate("/")}
         />
 
         {/* Desktop Nav */}
@@ -28,7 +29,7 @@ const Header = () => {
           {navItems.map((item) => (
             <button
               key={item}
-              onClick={() => scrollToSection(item)}
+              onClick={() => goToSection(item)}
               className="text-gray-300 px-4 py-1 rounded-full hover:bg-white/10 hover:text-white transition-all capitalize"
             >
               {item}
@@ -50,7 +51,7 @@ const Header = () => {
           {navItems.map((item) => (
             <button
               key={item}
-              onClick={() => scrollToSection(item)}
+              onClick={() => goToSection(item)}
               className="text-gray-300 px-4 py-2 rounded hover:bg-white/10 text-left capitalize"
             >
               {item}

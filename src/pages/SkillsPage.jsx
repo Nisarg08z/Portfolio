@@ -1,8 +1,20 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { skills } from "../data/skills";
 import SkillCard from "../components/SkillCard";
+import { useLocation } from "react-router-dom";
 
 const SkillsPage = () => {
+   const location = useLocation();
+
+  useEffect(() => {
+    const id = location.hash.replace("#", "");
+    if (id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div id="skills" className="min-h-screen flex justify-center items-start pt-20 px-4">
       <div className="max-w-7xl w-full flex flex-col items-center">

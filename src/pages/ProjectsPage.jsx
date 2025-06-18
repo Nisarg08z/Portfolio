@@ -1,8 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
+import { useLocation } from "react-router-dom";
 
 const ProjectsPage = () => {
+   const location = useLocation();
+
+  useEffect(() => {
+    const id = location.hash.replace("#", "");
+    if (id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div id="project" className="min-h-screen pt-20 px-4 flex justify-center">
       <div className="max-w-7xl w-full flex flex-col items-center">

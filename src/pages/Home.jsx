@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HomeAnimation from '../components/HomeAnimation';
 import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import { AiOutlineX } from "react-icons/ai";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const id = location.hash.replace("#", "");
+    if (id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <div
       id="home"

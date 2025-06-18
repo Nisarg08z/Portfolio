@@ -1,9 +1,21 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ContactForm from "../components/ContactForm";
 import ContactInfo from "../components/ContactInfo";
 import { Toaster } from "react-hot-toast";
+import { useLocation } from "react-router-dom";
 
 const ContactPage = () => {
+   const location = useLocation();
+
+  useEffect(() => {
+    const id = location.hash.replace("#", "");
+    if (id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div id="contact" className="min-h-screen pt-20 px-4">
       <Toaster position="bottom-right" />
