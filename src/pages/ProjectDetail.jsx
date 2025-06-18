@@ -155,6 +155,7 @@ const ProjectDetail = () => {
               controls
               className="snap-center flex-shrink-0 w-full sm:w-[90vw] md:w-[720px] max-h-[70vh] rounded-lg shadow object-contain bg-black"
             />
+
           ))}
           {project.images.map((img, i) => (
             <img
