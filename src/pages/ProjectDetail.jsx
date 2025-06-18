@@ -16,6 +16,12 @@ const ProjectDetail = () => {
     document.body.style.overflow = selectedImage ? "hidden" : "auto";
   }, [selectedImage]);
 
+  useEffect(() => {
+    if (project) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [project]);
+
   const scrollLeft = () => {
     scrollRef.current.scrollBy({ left: -600, behavior: "smooth" });
   };
