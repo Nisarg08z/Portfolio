@@ -7,6 +7,12 @@ const ContactForm = () => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
 
+  const canSend = () => {
+    const last = localStorage.getItem("lastContactTime");
+    if (!last) return true;
+    return Date.now() - parseInt(last) > 60 * 1000; // 60s
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { from_email, subject, message } = form.current;
@@ -16,14 +22,20 @@ const ContactForm = () => {
       return;
     }
 
+    if (!canSend()) {
+      toast.error("⏱ Please wait 1 minute before sending again.");
+      return;
+    }
+
     setLoading(true);
     try {
       await sendContactEmail(form.current);
-      toast.success("Message sent successfully!");
+      localStorage.setItem("lastContactTime", Date.now().toString());
+      toast.success("✅ Message sent successfully!");
       form.current.reset();
     } catch (err) {
       console.error(err);
-      toast.error("Failed to send message. Try again.");
+      toast.error("❌ Failed to send message. Try again.");
     } finally {
       setLoading(false);
     }
@@ -33,8 +45,9 @@ const ContactForm = () => {
     <form
       ref={form}
       onSubmit={handleSubmit}
-      className="p-6 shadow-md space-y-4 bg-[#1a1a1a]  rounded-xl"
+      className="p-6 shadow-md space-y-4 bg-[#1a1a1a] rounded-xl"
     >
+      <input type="hidden" name="name" value="***** PORTFOLIO *****" />
       <input
         type="email"
         name="from_email"

@@ -2,9 +2,9 @@ import emailjs from "@emailjs/browser";
 
 export const sendContactEmail = (form) => {
   return emailjs.sendForm(
-    "your_service_id",     // Replace this
-    "your_template_id",    // Replace this
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
     form,
-    "your_public_key"      // Replace this
+    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
   );
 };
