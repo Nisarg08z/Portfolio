@@ -15,9 +15,9 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { from_email, subject, message } = form.current;
+    const { name, from_email, subject, message } = form.current;
 
-    if (!from_email.value || !subject.value || !message.value) {
+    if (!name.value || !from_email.value || !subject.value || !message.value) {
       toast.error("Please fill in all fields.");
       return;
     }
@@ -47,7 +47,13 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       className="p-6 shadow-md space-y-4 bg-[#1a1a1a] rounded-xl"
     >
-      <input type="hidden" name="name" value="***** PORTFOLIO *****" />
+      <input
+        type="name"
+        name="name"
+        placeholder="Your Name"
+        required
+        className="w-full px-4 py-3 rounded-lg bg-[#2a2a2a] text-white placeholder-gray-400 focus:ring-2 focus:ring-gray-500 focus:outline-none transition"
+      />
       <input
         type="email"
         name="from_email"
