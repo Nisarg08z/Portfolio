@@ -17,10 +17,8 @@ const ProjectDetail = () => {
   }, [selectedImage]);
 
   useEffect(() => {
-    if (project) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  }, [project]);
+    window.scrollTo(0, 0);
+  }, []);
 
   const scrollLeft = () => {
     scrollRef.current.scrollBy({ left: -600, behavior: "smooth" });
