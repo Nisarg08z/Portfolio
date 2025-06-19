@@ -25,11 +25,11 @@ const ContactPage = () => {
         </h2>
 
         {/* Centered Grid */}
-        <div className="grid md:grid-cols-2 gap-10 w-full items-center justify-center">
+        <div className="grid md:grid-cols-2 gap-10 w-full  justify-center">
           <div className="flex justify-center">
             <ContactInfo />
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center">
             <ContactForm />
           </div>
         </div>
