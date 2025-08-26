@@ -22,10 +22,11 @@ import {
   SiPostman,
   SiFirebase,
   SiRedux,
-  SiRubyonrails 
+  SiRazorpay 
 } from "react-icons/si";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import { TbBrandCpp } from "react-icons/tb";
+import { RiGeminiLine } from "react-icons/ri";
 
 export const skills = [
   { name: "C++", icon: TbBrandCpp },
@@ -53,6 +54,6 @@ export const skills = [
   { name: "MySQL", icon: SiMysql },
   { name: "Cloudinary", icon: SiCloudinary },
   { name: "Firebase", icon: SiFirebase },
-  { name: "RazorPay", icon: SiRubyonrails },
-  { name: "Gemini API", icon: SiRubyonrails } 
+  { name: "RazorPay", icon: SiRazorpay  },
+  { name: "Gemini API", icon: RiGeminiLine } 
 ];
