@@ -12,7 +12,6 @@ import {
 import {
   SiTailwindcss,
   SiMongodb,
-  SiFigma,
   SiPython,
   SiMysql,
   SiStreamlit,
@@ -47,7 +46,6 @@ export const skills = [
   { name: "Docker", icon: FaDocker },
   { name: "Git", icon: FaGit },
   { name: "GitHub", icon: FaGithub },
-  { name: "Figma", icon: SiFigma },
   { name: "HTML5", icon: FaHtml5 },
   { name: "CSS3", icon: FaCss3Alt },
   { name: "PHP", icon: FaPhp },
