@@ -18,17 +18,20 @@ import {
   SiStreamlit,
   SiOpenai,
   SiLangchain,
-  SiCloudinary ,
-  SiPostman 
+  SiCloudinary,
+  SiPostman,
+  SiFirebase,
+  SiRedux,
+  SiRubyonrails 
 } from "react-icons/si";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import { TbBrandCpp } from "react-icons/tb";
-
 
 export const skills = [
   { name: "C++", icon: TbBrandCpp },
   { name: "JavaScript", icon: FaJs },
   { name: "React", icon: FaReact },
+  { name: "Redux", icon: SiRedux },
   { name: "Node.js", icon: FaNodeJs },
   { name: "Express.js", icon: FaNodeJs },
   { name: "Tailwind CSS", icon: SiTailwindcss },
@@ -39,7 +42,7 @@ export const skills = [
   { name: "OpenAI", icon: SiOpenai },
   { name: "Streamlit", icon: SiStreamlit },
   { name: "Qdrant", icon: BsDatabaseFillGear },
-  { name: "Postman", icon: SiPostman  },
+  { name: "Postman", icon: SiPostman },
   { name: "Docker", icon: FaDocker },
   { name: "Git", icon: FaGit },
   { name: "GitHub", icon: FaGithub },
@@ -48,5 +51,8 @@ export const skills = [
   { name: "CSS3", icon: FaCss3Alt },
   { name: "PHP", icon: FaPhp },
   { name: "MySQL", icon: SiMysql },
-  { name: "Cloudinary", icon: SiCloudinary  },
+  { name: "Cloudinary", icon: SiCloudinary },
+  { name: "Firebase", icon: SiFirebase },
+  { name: "RazorPay", icon: SiRubyonrails },
+  { name: "Gemini API", icon: SiRubyonrails } 
 ];
